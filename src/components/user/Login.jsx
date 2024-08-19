@@ -43,11 +43,11 @@ const Login = () => {
       {/* <nav>
         <AuthNav />
       </nav> */}
-      <main className="w-full min-h-screen bg-gray-100 flex justify-center items-center py-8">
-        <div id="form" className="bg-white rounded-lg border border-green-600 shadow-lg p-12 max-w-md w-full">
-          <h2 className="text-3xl font-bold mb-6 text-bg-primary">Login</h2>
+      <main className="w-full min-h-screen bg-gray-100 flex justify-center items-center py-8 px-4 sm:px-6 lg:px-8">
+        <div id="form" className="bg-white rounded-lg border border-green-600 shadow-lg p-6 sm:p-8 lg:p-12 max-w-md w-full">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-bg-primary">Login</h2>
           <form onSubmit={handleSubmit}>
-            <div className="mb-6">
+            <div className="mb-4 sm:mb-6">
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
               <input
                 type="email"
@@ -55,14 +55,14 @@ const Login = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`border rounded-lg py-3 px-4 w-full text-lg outline-none transition duration-300 ${
+                className={`border rounded-lg py-2 sm:py-3 px-3 sm:px-4 w-full text-base sm:text-lg outline-none transition duration-300 ${
                   errors.email ? 'border-red-600 focus:ring-red-300' : 'border-green-600 focus:ring-green-300'
                 }`}
                 placeholder="Enter your email"
               />
               {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
             </div>
-            <div className="mb-6">
+            <div className="mb-4 sm:mb-6">
               <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
               <input
                 type="password"
@@ -70,39 +70,39 @@ const Login = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                className={`border rounded-lg py-3 px-4 w-full text-lg outline-none transition duration-300 ${
+                className={`border rounded-lg py-2 sm:py-3 px-3 sm:px-4 w-full text-base sm:text-lg outline-none transition duration-300 ${
                   errors.password ? 'border-red-600 focus:ring-red-300' : 'border-green-600 focus:ring-green-300'
                 }`}
                 placeholder="Enter your password"
               />
               {errors.password && <p className="text-red-600 text-sm mt-1">{errors.password}</p>}
             </div>
-            <p className="text-lg text-gray-600 mt-3 mb-4 flex items-center justify-end">
-            <Link href="/forgot-password" className="text-green-600 font-semibold hover:underline">Forgot Password?</Link>
-          </p>
+            <p className="text-base sm:text-lg text-gray-600 mt-3 mb-4 flex items-center justify-end">
+              <Link href="/forgot-password" className="text-green-600 font-semibold hover:underline">Forgot Password?</Link>
+            </p>
             <button
               type="submit"
-              className="bg-green-600 text-white w-full py-3 px-6 rounded-lg text-lg font-semibold hover:bg-green-700 transition duration-300"
+              className="bg-green-600 text-white w-full py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-base sm:text-lg font-semibold hover:bg-green-700 transition duration-300"
             >
               Login
             </button>
           </form>
           
-          <p className="text-lg text-gray-600 mt-4 flex items-center justify-center">
-            Don&apos;t have an account? <Link href="/register" className="text-green-600 font-semibold hover:underline ml-2">Register</Link>
+          <p className="text-base sm:text-lg text-gray-600 mt-4 flex items-center justify-center">
+            Don&apos;t have an account? <Link href="/register" className="text-green-600 font-semibold hover:underline ml-1 sm:ml-2">Register</Link>
           </p>
-          <div className="flex items-center justify-center my-4">
+          <div className="flex items-center justify-center my-4 sm:my-6">
             <hr className="border-gray-300 flex-1" />
-            <span className="mx-4 text-gray-600">or</span>
+            <span className="mx-2 sm:mx-4 text-gray-600">or</span>
             <hr className="border-gray-300 flex-1" />
           </div>
-          <div className="mt-6 flex flex-col items-center">
+          <div className="mt-4 sm:mt-6 flex flex-col items-center">
             <button
               onClick={handleGoogleLogin}
-              className="flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-md w-full max-w-xs px-6 py-3 text-sm font-medium text-gray-800 hover:bg-gray-100 transition duration-300"
+              className="flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-md w-full max-w-xs px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium text-gray-800 hover:bg-gray-100 transition duration-300"
             >
               <svg
-                className="h-6 w-6 mr-2"
+                className="h-5 sm:h-6 w-5 sm:w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 48 48"
               >

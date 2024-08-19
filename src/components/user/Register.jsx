@@ -100,7 +100,7 @@ const Register = () => {
               Register
             </button>
           </form>
-          <p className="text-base sm:text-sm text-gray-600 mt-4 sm:mt-6 mb-4 flex items-center justify-center">
+          <p className="sm:text-sm text-lg text-gray-600 mt-4 sm:mt-6 mb-4 flex items-center justify-center">
             Already have an account? <a href="/login" className="text-green-600 font-semibold hover:underline ml-1 sm:ml-2">Log in</a>
           </p>
           <div className="flex items-center justify-center my-4 sm:my-6">
