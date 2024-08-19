@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import AuthNav from "./AuthNav";
+import Link from "next/link";
 
 const Register = () => {
   const [formData, setFormData] = useState({
