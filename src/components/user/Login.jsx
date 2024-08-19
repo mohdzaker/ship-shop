@@ -89,7 +89,7 @@ const Login = () => {
           </form>
           
           <p className="text-lg text-gray-600 mt-4 flex items-center justify-center">
-            Don't have an account? <Link href="/register" className="text-green-600 font-semibold hover:underline ml-2">Register</Link>
+            Don&apos;t have an account? <Link href="/register" className="text-green-600 font-semibold hover:underline ml-2">Register</Link>
           </p>
           <div className="flex items-center justify-center my-4">
             <hr className="border-gray-300 flex-1" />
